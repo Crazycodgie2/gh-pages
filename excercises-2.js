@@ -65,6 +65,7 @@ console.assert(isVowel("2") === false)
 // For example, translate("this is fun") should return
 // the string "tothohisos isos fofunon".
 // ---------------------
+function rovarspraket() {}
 
 console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
@@ -77,6 +78,14 @@ console.assert(rovarspraket(0) === "0")
 // of a string. For example, reverse("jag testar") should
 // return the string "ratset gaj".
 // ---------------------
+function reverse(str) {
+  var string1 = str.split("")
+
+  var string2 = string1.reverse()
+
+  var string3 = string2.join("")
+  return string3
+}
 
 console.assert(reverse("books") === "skoob")
 console.assert(
